@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster
+FROM balenalib/raspberry-pi-python:3.7-buster-run
 
 WORKDIR /usr/src/app
 
