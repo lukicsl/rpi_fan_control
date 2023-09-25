@@ -4,7 +4,7 @@ import time
 
 # Argument parsing
 parser = argparse.ArgumentParser(description='Control a PWM fan based on CPU temperature.')
-parser.add_argument('--metrics', type=string, default='/usr/src/app/', help='Temperature where the minimum fan speed is applied (default: 60°C)')
+parser.add_argument('--metrics', type=str, default='/usr/src/app/', help='Temperature where the minimum fan speed is applied (default: 60°C)')
 parser.add_argument('--min_temp', type=float, default=60, help='Temperature where the minimum fan speed is applied (default: 60°C)')
 parser.add_argument('--max_temp', type=float, default=80, help='Temperature where the maximum fan speed is applied (default: 80°C)')
 parser.add_argument('--min_fan', type=int, default=10, help='Minimum fan speed (default: 10%)')
